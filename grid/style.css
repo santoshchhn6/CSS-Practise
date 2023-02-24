@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  justify-content: center;
+}
+
+.item {
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wide {
+  grid-column: 1 / span 3;
+}
+
+.tall {
+  grid-row: 2 / span 4;
+}
+
+.area {
+  grid-area: 1/1 / span 3 / span 5;
+  /* grid-area: ; */
+}
