@@ -29,11 +29,19 @@ grid-auto-rows        :	Specifies a default row size
 grid-auto-flow        :	Specifies how auto-placed items are inserted in the grid
 
 */
+/* 
+values
+
+grid-template-rows: [ '100px', 'auto', '1fr', 'repeat(3,1fr)' ]
+justify-content : ['center','flex-start','flex-end','space-around','space-between']
+align-items : ['center','flex-start','flex-end','space-around','space-between']
+*/
 
 .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  /* grid-template: repeat(6, 1fr); */
   gap: 5px;
   justify-content: center;
 }
