@@ -1,11 +1,30 @@
+/* 
+
+The flex container properties are:
+
+flex-direction  :	Specifies the direction of the flexible items inside a flex container
+flex-wrap       :	Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+flex-flow       :	A shorthand property for flex-direction and flex-wrap
+justify-content :	Horizontally aligns 
+align-items     : Vertically aligns 
+align-content   :	Modifies the behavior of the flex-wrap property. 
+
+  flex-direction : ['column','row','column-reverse','row-reverse']
+  flex-wrap : ['wrap','nowrap','wrap-reverse']
+  flex-flow : ['column','row','column-reverse','row-reverse'] ['wrap','nowrap','wrap-reverse']
+  justify-content : ['center','flex-start','flex-end','space-around','space-between']
+  align-items : ['center','flex-start','flex-end','stretch','baseline']
+  align-content : ['center','flex-start','flex-end','space-around','space-between','stretch']
+
+*/
 /* //////min-width and max-width /////////////////////////////////////////////////////// */
 .flex {
+  height: 80vh;
   display: flex;
   gap: 1rem;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-  /*<--------*/
-  flex-wrap: wrap; /*<--------*/
+  flex-wrap: wrap;
 
   border: 4px solid rgb(0, 162, 255);
   padding: 10px;
@@ -13,12 +32,14 @@
 
 .item {
   display: flex;
-  flex: 1; /*<--------*/
+  flex: 1;
   justify-content: center;
   align-items: center;
+  /* text-align: center; */
 
   border: 2px solid rgb(255, 0, 0);
-  min-width: 100px; /*<--------*/
-  max-width: 200px;
+  min-width: 200px;
+  /* max-width: 200px; */
+  /* width: 200px; */
   height: 100px;
 }
