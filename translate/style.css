@@ -1,0 +1,71 @@
+/* 
+
+translate: x-axis y-axis z-axis;
+
+Possible values:
+* length
+* %
+
+When translate property for z-axis is set, perspective property must also be set on parent element before we can see any effect:
+*/
+
+.main {
+  position: relative;
+}
+
+.container1 {
+  width: 95%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+  align-content: center;
+  justify-content: center;
+
+  padding: 10px;
+  perspective: 100px;
+}
+
+.container2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid rgb(121, 121, 121);
+  min-width: 100px;
+  height: 100px;
+}
+
+.item2 {
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.translateX {
+  translate: 20px;
+}
+
+.translateY {
+  translate: 0 20px;
+}
+
+.translateZ {
+  translate: 0 0 20px;
+}
+
+.translateXY {
+  translate: 20px 20px;
+}
+
+.translateXZ {
+  translate: 20px 0 20px;
+}
+
+.translateYZ {
+  translate: 0 20px 20px;
+}
