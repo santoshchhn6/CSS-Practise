@@ -45,8 +45,16 @@ transform: scaleY(1.5);
   transform: rotate(45deg);
 }
 
+.rotateX {
+  transform: rotateX(45deg);
+}
+
+.rotateY {
+  transform: rotateY(45deg);
+}
+
 .skew {
-  transform: skew(45deg);
+  transform: skew(30deg, 30deg);
 }
 
 .skewX {

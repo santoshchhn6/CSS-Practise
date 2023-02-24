@@ -1,0 +1,73 @@
+/* transition: property duration timing-function delay|initial|inherit; */
+/* 
+transition-property	       : Specifies the name of the CSS property the transition effect is for
+transition-duration        :	Specifies how many seconds or milliseconds the transition effect takes to complete
+transition-delay           :	Defines when the transition effect will start
+transition-timing-function :	Specifies the speed curve of the transition effect
+*/
+
+/* 
+transition-property : ['width','height'...]
+transition-duration : ['2s','500ms']
+transition-delay : ['2s','500ms']
+transition-timing-function : ['linear'.'ease','ease-in','ease-out','ease-in-out','cubic-bezier(0,0,1,1)']; 
+*/
+
+.container {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  align-content: center;
+  justify-content: center;
+
+  border: 4px solid rgb(0, 162, 255);
+  padding: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid rgb(255, 0, 0);
+  min-width: 100px;
+  height: 100px;
+  transition: 0.4s ease;
+}
+
+.scale:hover {
+  transform: scale(1.5);
+}
+
+.scaleY:hover {
+  transform: scaleY(1.5);
+}
+
+.scaleX:hover {
+  transform: scaleX(1.5);
+}
+
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+.rotateX:hover {
+  transform: rotateX(45deg);
+}
+
+.rotateY:hover {
+  transform: rotateY(45deg);
+}
+
+.skew:hover {
+  transform: skew(30deg, 30deg);
+}
+
+.skewX:hover {
+  transform: skewX(45deg);
+}
+
+.skewY:hover {
+  transform: skewY(45deg);
+}
