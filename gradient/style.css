@@ -12,8 +12,8 @@ Syntax
 
 .content {
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 3rem;
+  grid-template-columns: auto auto auto auto;
+  gap: 0.3rem;
   justify-content: center;
   align-content: center;
   margin-bottom: 50px;
@@ -51,17 +51,28 @@ Syntax
   background: linear-gradient(yellow 10%, blue 85%, green 90%);
 }
 .item8 {
-  box-shadow: 5px 5px 5px inset;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 0, 0));
 }
 .item9 {
-  box-shadow: 0 0 5px inset;
+  background: repeating-linear-gradient(yellow 0px, red 40px);
 }
 .item10 {
-  box-shadow: 5px 5px red;
+  background: repeating-linear-gradient(
+    yellow 0px,
+    yellow 20px,
+    red 20px,
+    red 40px
+  );
 }
 .item11 {
-  box-shadow: 5px 5px red, 10px 10px green, 15px 15px blue;
+  background: repeating-linear-gradient(
+    45deg,
+    yellow 0px,
+    yellow 20px,
+    red 20px,
+    red 40px
+  );
 }
 .item12 {
-  box-shadow: 5px 5px 5px red, 10px 10px 5px green, 15px 15px 5px blue;
+  background: repeating-linear-gradient(190deg, yellow 0px, red 40px);
 }
