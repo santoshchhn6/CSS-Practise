@@ -1,0 +1,67 @@
+/* 
+CSS defines three types of gradients:
+
+  * Linear Gradients (goes down/up/left/right/diagonally)
+  * Radial Gradients (defined by their center)
+  * Conic Gradients (rotated around a center point) 
+
+Syntax
+
+  background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+*/
+
+.content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+.item {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 10rem;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 {
+  background: linear-gradient(red, yellow);
+}
+.item2 {
+  background: linear-gradient(to right, red, yellow);
+}
+.item3 {
+  background: linear-gradient(to bottom right, red, yellow);
+}
+.item4 {
+  background: linear-gradient(27deg, red, yellow);
+}
+.item5 {
+  background: linear-gradient(red, yellow, green);
+}
+.item6 {
+  background: linear-gradient(red, yellow, green, blue, indigo, violet);
+}
+.item7 {
+  background: linear-gradient(yellow 10%, blue 85%, green 90%);
+}
+.item8 {
+  box-shadow: 5px 5px 5px inset;
+}
+.item9 {
+  box-shadow: 0 0 5px inset;
+}
+.item10 {
+  box-shadow: 5px 5px red;
+}
+.item11 {
+  box-shadow: 5px 5px red, 10px 10px green, 15px 15px blue;
+}
+.item12 {
+  box-shadow: 5px 5px 5px red, 10px 10px 5px green, 15px 15px 5px blue;
+}
