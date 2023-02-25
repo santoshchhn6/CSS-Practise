@@ -1,0 +1,57 @@
+/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+
+.content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+.item {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 10rem;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 {
+  box-shadow: 0 5px;
+}
+.item2 {
+  box-shadow: 5px 0;
+}
+.item3 {
+  box-shadow: 5px 5px;
+}
+.item4 {
+  box-shadow: 5px 5px 5px;
+}
+.item5 {
+  box-shadow: 5px 5px 5px 5px;
+}
+.item6 {
+  box-shadow: 5px 5px 0px 5px;
+}
+.item7 {
+  box-shadow: 5px 5px inset;
+}
+.item8 {
+  box-shadow: 5px 5px 5px inset;
+}
+.item9 {
+  box-shadow: 0 0 5px inset;
+}
+.item10 {
+  box-shadow: 5px 5px red;
+}
+.item11 {
+  box-shadow: 5px 5px red, 10px 10px green, 15px 15px blue;
+}
+.item12 {
+  box-shadow: 5px 5px 5px red, 10px 10px 5px green, 15px 15px 5px blue;
+}
