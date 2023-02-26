@@ -7,8 +7,9 @@ CSS defines three types of gradients:
 
 Syntax
 
-  background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
-  background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+  background: linear-gradient(direction, color-stop1, color-stop2, ...);
+  background: radial-gradient(shape size at position, start-color, ..., last-color);
+  background: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
 */
 
 .content {
@@ -156,4 +157,27 @@ h1 {
 }
 .item32 {
   background: radial-gradient(closest-side at 20% 80%, green, yellow);
+}
+.item33 {
+  background: conic-gradient(green, yellow, red);
+}
+.item34 {
+  background: conic-gradient(black, blue, green, yellow, red, black);
+}
+.item35 {
+  background: conic-gradient(green 45deg, yellow 90deg, red 210deg);
+}
+.item36 {
+  background: conic-gradient(
+    green 0deg,
+    green 50deg,
+    yellow 50deg,
+    yellow 110deg,
+    red 110deg,
+    red 210deg,
+    blue 210deg
+  );
+}
+.item37 {
+  background: conic-gradient(from 55deg, green, yellow, red);
 }
