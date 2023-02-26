@@ -109,3 +109,51 @@ h1 {
     yellow 20px
   );
 }
+.item17 {
+  background: radial-gradient(farthest-side at 0% 0%, green, yellow);
+}
+.item18 {
+  background: radial-gradient(farthest-side at 100% 0%, green, yellow);
+}
+.item19 {
+  background: radial-gradient(farthest-side at 0% 100%, green, yellow);
+}
+.item20 {
+  background: radial-gradient(farthest-side at 100% 100%, green, yellow);
+}
+.item21 {
+  background: radial-gradient(farthest-corner at 0% 0%, green, yellow);
+}
+.item22 {
+  background: radial-gradient(farthest-corner at 100% 0%, green, yellow);
+}
+.item23 {
+  background: radial-gradient(farthest-corner at 0% 100%, green, yellow);
+}
+.item24 {
+  background: radial-gradient(farthest-corner at 100% 100%, green, yellow);
+}
+.item25 {
+  background: radial-gradient(closest-corner at 20% 20%, green, yellow);
+}
+.item26 {
+  background: radial-gradient(closest-corner at 20% 40%, green, yellow);
+}
+.item27 {
+  background: radial-gradient(closest-corner at 20% 60%, green, yellow);
+}
+.item28 {
+  background: radial-gradient(closest-corner at 20% 80%, green, yellow);
+}
+.item29 {
+  background: radial-gradient(closest-side at 20% 20%, green, yellow);
+}
+.item30 {
+  background: radial-gradient(closest-side at 20% 40%, green, yellow);
+}
+.item31 {
+  background: radial-gradient(closest-side at 20% 60%, green, yellow);
+}
+.item32 {
+  background: radial-gradient(closest-side at 20% 80%, green, yellow);
+}
