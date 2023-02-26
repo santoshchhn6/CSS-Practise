@@ -181,3 +181,35 @@ h1 {
 .item37 {
   background: conic-gradient(from 55deg, green, yellow, red);
 }
+.item38 {
+  background: conic-gradient(at 20% 30%, green, yellow, red);
+}
+.item39 {
+  background: conic-gradient(at 80% 30%, green, yellow, red);
+}
+.item40 {
+  background: conic-gradient(at 20% 70%, green, yellow, red);
+}
+.item41 {
+  background: repeating-conic-gradient(green 0deg, yellow 20deg);
+}
+.item42 {
+  background: repeating-conic-gradient(
+    green 0deg,
+    green 10deg,
+    yellow 10deg,
+    yellow 20deg
+  );
+}
+.item43 {
+  background: repeating-conic-gradient(at 80% 70%, green 0deg, yellow 20deg);
+}
+.item44 {
+  background: repeating-conic-gradient(
+    at 20% 30%,
+    green 0deg,
+    green 10deg,
+    yellow 10deg,
+    yellow 20deg
+  );
+}
