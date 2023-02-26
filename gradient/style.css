@@ -8,6 +8,7 @@ CSS defines three types of gradients:
 Syntax
 
   background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+  background-image: radial-gradient(shape size at position, start-color, ..., last-color);
 */
 
 .content {
@@ -29,6 +30,21 @@ Syntax
   align-items: center;
 }
 
+h1 {
+  background: linear-gradient(blue, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#bg {
+  background: repeating-linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0px,
+    rgb(255, 255, 255) 20px,
+    rgb(198, 217, 230) 20px,
+    rgb(198, 217, 230) 40px
+  );
+}
 .item1 {
   background: linear-gradient(red, yellow);
 }
@@ -75,4 +91,21 @@ Syntax
 }
 .item12 {
   background: repeating-linear-gradient(190deg, yellow 0px, red 40px);
+}
+.item13 {
+  background: radial-gradient(yellow, red);
+}
+.item14 {
+  background: radial-gradient(circle, green 5%, yellow 15%, red 65%);
+}
+.item15 {
+  background: repeating-radial-gradient(green, yellow 15%);
+}
+.item16 {
+  background: repeating-radial-gradient(
+    green,
+    green 10px,
+    yellow 10px,
+    yellow 20px
+  );
 }
